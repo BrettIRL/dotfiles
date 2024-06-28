@@ -3,3 +3,4 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "jj", "<Esc>", { silent = true })
+vim.keymap.set("n", "<leader>o", "<CMD>OilToggle<CR>", { desc = "Explorer Oil" })
