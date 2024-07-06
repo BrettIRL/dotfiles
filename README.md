@@ -23,6 +23,18 @@ I like to clone this repo into `.dotfiles` in my `$HOME` directory but feel free
 
 Simple!
 
+## Tmux
+
+Default `prefix` changed to <kbd>ctrl</kbd> + <kbd>space</kbd>.
+
+The tmux config requires [TPM](https://github.com/tmux-plugins/tpm) to be installed. Do this after using stow.
+
+Clone TPM:
+
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+Open a tmux session and press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to install all plugins.
+
 ## Note
 
 I have included a `fonts` directory. I don't actually use stow to manage my fonts, this just seemed like the best place for them.
