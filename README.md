@@ -37,4 +37,4 @@ Open a tmux session and press `prefix` + <kbd>I</kbd> (capital i, as in **I**nst
 
 ## Note
 
-I have included a `fonts` directory. I don't actually use stow to manage my fonts, this just seemed like the best place for them.
+I have included a `fonts` directory. This just contains info on how to set up the font I use. This isn't managed by stow.
