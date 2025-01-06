@@ -46,12 +46,17 @@ alias vim='nvim'
 alias pn='pnpm'
 
 # Paths
-export PATH="$PATH:/home/brett/.local/share/pnpm"
-export PATH="$PATH:/opt/nvim-linux64/bin"
-export PATH="$HOME/.local/bin:$PATH"
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+if [[ "$(uname)" == "Darwin" ]]; then # MacOS
+  export PATH=/opt/homebrew/bin:$PATH
+elif [[ "$(uname)" == "Linux" ]]; then # Linux
+  export PATH="$HOME/.local/bin:$PATH"
+  export PATH="$PATH:/home/brett/.local/share/pnpm"
+  export PATH="$PATH:/opt/nvim-linux64/bin"
+
+  export GOROOT=/usr/local/go
+  export GOPATH=$HOME/go
+  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
