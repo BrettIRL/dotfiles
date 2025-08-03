@@ -4,4 +4,8 @@ return {
     lazy = true,
     opts = { style = "night" },
   },
+  {
+    "catppuccin/nvim",
+    enabled = false,
+  },
 }
