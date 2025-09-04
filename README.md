@@ -35,6 +35,8 @@ Clone TPM:
 
 Open a tmux session and press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to install all plugins.
 
+> Note: On a new MacOS machine/install, "input sources" keyboard shortcuts need to be disabled for <kbd>ctrl</kbd> + <kbd>space</kbd> to work.
+
 ## Note
 
 I have included a `fonts` directory. This just contains info on how to set up the font I use. This isn't managed by stow.
